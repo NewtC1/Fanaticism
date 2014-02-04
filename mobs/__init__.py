@@ -1,0 +1,1 @@
+__all__ = ["mob", "npc", "placeholder", "player", "wolf"]
