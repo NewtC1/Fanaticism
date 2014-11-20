@@ -5,7 +5,7 @@ class NPC(Mob):
    name=''
    
    #init
-   def __init__(self, health, name):
+   def __init__(self, health = 3, name = "Sir Livingston"):
       self.health = health
       self.symbol = 'N'
       self.name=name

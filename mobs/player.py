@@ -8,7 +8,7 @@ class player(Mob):
       self.damage=damage
 
    #set infection level to maximum, turning them into crusadors
-   def infectFantatic(self, target):
+   def infectFanatic(self, target):
       if (hasattr(target,"health")):
          target.setInfection(10)
 

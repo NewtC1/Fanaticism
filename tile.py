@@ -48,9 +48,11 @@ class tile:
       if self.actor is not None:
          self.actor().takeDamage(damage)
    
+   # target is a target tile
    def infectPriest(self, target):
-      if self.actor().getSymbol=='P':
-         self.actor().infectPriest(target.getActor())
+      if self.actor is not None and target is not None:
+         if self.actor().getSymbol() == 'P':
+            self.actor().infectPriest(target.getActor())
 
    #simplifies the attack order
    def attack(self, target):

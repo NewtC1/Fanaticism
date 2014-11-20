@@ -5,10 +5,16 @@ class Mob:
    health = 3 	#Health of the mob
    infection = 0	#Infection level, from 1-10
    symbol = ':'	#Symbol displayed on string
+   panic = 0           #How much is this mob panicing 
+   x=0
+   y=0
+   facing=0; #1 is north, 2 is east, 3 is south, 4 is west
    #infectedThisUpdate=0
    
-   def __init(self, health=3):
+   def __init(self, health=3, x = 0, y = 0):
       self.health = health
+      self.x = x
+      self.y = y
    
    def __str__(self):
       return self.symbol
